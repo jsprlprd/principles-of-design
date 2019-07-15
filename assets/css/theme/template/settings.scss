@@ -1,0 +1,43 @@
+// Base settings for all themes that can optionally be
+// overridden by the super-theme
+
+// Background of the presentation
+$backgroundColor: #FFFFFF;
+
+// Primary/body text
+$mainFont: "GT-Walsheim-Pro", Arial, Helvetica, sans-serif;
+$mainFontSize: 24px;
+$mainColor: inherit;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: inherit;
+$headingFont: "GT-Walsheim-Pro", Arial, Helvetica, sans-serif;
+$headingColor: inherit;
+$headingLineHeight: inherit;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingTextShadow: none;
+$headingFontWeight: normal;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 3.5rem;
+$heading2Size: 2.75rem;
+$heading3Size: 2rem;
+$heading4Size: 1.5rem;
+
+// Links and actions
+$linkColor: #00C9FF;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #FFED00;
+$selectionColor: #000000;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+	background: $backgroundColor;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#007BFE" />
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/img/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="{{ site.baseurl }}/assets/img/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="{{ site.baseurl }}/assets/img/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="{{ site.baseurl }}/assets/img/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="{{ site.baseurl }}/assets/img/favicons/mstile-310x310.png" />
+
+    <title>DTC Bootcamp | Principles of Design</title>
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-152x152.png" />
+
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-128.png" sizes="128x128" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-196x196.png" sizes="196x196" />
+
+    <!-- Base stylesheet -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/dxc-presentation.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/reveal.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/theme/theme.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/global.css">
+
+  </head>
+  <body>
+
+    {{ content }}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="/assets/js/bootstrap.bundle.min.js"></script> -->
+    <script src="{{ site.baseurl }}/assets/js/functions.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        width: "1440",
+        height: "900",
+        minScale: 1,
+        maxScale: 1
+      });
+      dependencies: [
+        // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+        { src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+        // Interpret Markdown in <section> elements
+        { src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+        // Syntax highlight for <code> elements
+        { src: 'assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+        // Zoom in and out with Alt+click
+        { src: 'assets/plugin/zoom-js/zoom.js', async: true },
+
+        // Speaker notes
+        { src: 'assets/plugin/notes/notes.js', async: true },
+
+        // MathJax
+        { src: 'assets/plugin/math/math.js', async: true }
+      ]
+    </script>
+  </body>
+</html>

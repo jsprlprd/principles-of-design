@@ -1,0 +1,41 @@
+---
+layout: base
+---
+
+<div class="fixed-top">
+  <div class="container">
+    <div id="accent"></div>
+  </div>
+</div>
+
+<div class="reveal">
+  <div class="container-fluid slides">
+    {{ content }}
+  </div>
+</div>
+
+<div class="fixed-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        DXC Technology
+      </div>
+      <div class="col text-center">
+        © 2019 DXC Technology Company. All rights reserved.
+      </div>
+      <div class="col text-right">
+        <script>
+          // Array of day names
+          var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday", "Thursday","Friday","Saturday");
+
+          // Array of month Names
+          var monthNames = new Array(
+          "January","February","March","April","May","June","July", "August","September","October","November","December");
+
+          var now = new Date();
+          document.write(monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear());
+        </script>
+      </div>
+    </div>
+  </div>
+</div>

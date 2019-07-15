@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "GT-Walsheim-Pro";
+  src: url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Light.eot"),
+       url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Light.woff") format("woff"),
+       url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Walsheim-Pro";
+  src: url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Regular.eot"),
+       url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Regular.woff") format("woff"),
+       url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Walsheim-Pro";
+  src: url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Bold.eot"),
+       url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Bold.woff") format("woff"),
+       url("../fonts/GT_Walsheim_Pro/GT-Walsheim-Pro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+html {
+  font-size: 16px;
+}
+/* 
+#accent {
+  position: absolute;
+  display: block;
+  width: 1rem;
+  height: .5rem;
+  margin: 0 .3rem;
+} */
+
+#accent {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 85px 50px 0 50px;
+  border-color: #000 transparent transparent transparent;
+  margin-left: -50px;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
